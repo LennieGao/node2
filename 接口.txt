@@ -1,0 +1,160 @@
+﻿注册接口
+
+        接口地址：/api/register
+        返回格式：json
+        请求方式：post
+
+        传递的参数
+            名称	   必填	 类型	  说明
+            username	     Y	string       	用户ID
+            password           Y        string        用户密码
+   
+        返回的参数
+            status: true  成功  false  失败
+            info:说明
+
+
+
+登陆接口
+
+        接口地址：/api/login
+        返回格式：json
+        请求方式：post
+
+        传递的参数
+            名称	必填         类型           说明
+            username       Y           string         用户ID
+            password        Y           string         用户密码
+    
+        返回的参数
+            status: true  成功  false  失败
+            info:说明
+
+
+
+商户列表
+
+        接口地址：/merchant/merchantList
+        返回格式：json
+        请求方式：get
+
+        返回的参数
+            status: true  成功  false  失败
+            data:数据
+
+
+
+新增商户
+
+        接口地址：/merchant/Addmerchant
+        返回格式：json
+        请求方式：post
+
+         传递的参数
+            名称	          必填            类型	      说明
+            merchantLogo          Y            string                 商户logo
+            merchantName         Y             string               商户名称
+            merchantAddress      Y            string                商户地址
+            merchantTell             Y            Number            商户电话
+            merchantCost                Y            Number            商户起送费
+
+        返回的参数
+            status: true  成功  false  失败
+            info:说明
+
+
+
+
+修改商户信息
+        接口地址： /merchant/modifyMerchant
+        返回格式：json
+        请求方式：post
+
+         传递的参数
+            名称	          必填           类型	      说明
+            _id                            Y            string                     id
+            merchantLogo          Y            string                   商户logo
+            merchantName         Y             string                 商户名称
+            merchantAddress      Y            string                  商户地址
+            merchantTell             Y            Number              商户电话
+            merchantCost           Y            Number              商户起送费
+
+        返回的参数
+            status: true  成功  false  失败
+            info:说明
+
+
+
+
+商品列表
+
+        接口地址：/food/foodList
+        返回格式：json
+        请求方式：post
+
+        传递的参数
+            名称	   必填	     类型	      说明
+            foodName         Y            string         商品名称
+            foodPrice           Y            Number     商品价格
+            foodLogo           Y            string         商品图片
+            foodDescribe      Y            string         商品描述
+
+        返回的参数
+            status: true  成功  false  失败
+            info:说明
+
+
+
+添加商品
+
+        接口地址：/food/addFood
+        返回格式：json
+        请求方式：post
+
+        传递的参数
+            名称	   必填	     类型	      说明
+            foodName         Y            string         商品名称
+            foodPrice           Y            Number     商品价格
+            foodLogo           Y            string         商品图片
+            foodDescribe      Y            string         商品描述
+
+        返回的参数
+            status: true  成功  false  失败
+            info:说明
+
+
+修改商品
+
+        接口地址：/foob/modifyFood
+        返回格式：json
+        请求方式：post
+
+        传递的参数
+            名称	   必填	     类型	      说明
+            _id	     Y	   string	     商品id
+            foodName         Y            string         商品名称
+            foodPrice           Y            Number     商品价格
+            foodLogo           Y            string         商品图片
+            foodDescribe      Y            string         商品描述
+
+
+        返回的参数
+            status: true  成功  false  失败
+            info:说明
+
+
+删除商品
+
+        接口地址：/foob/delFood
+        返回格式：json
+        请求方式：post
+
+        传递的参数
+            名称	   必填	     类型	      说明
+            商品ID               Y            Number      商品ID
+
+        返回的参数
+            status: true  成功  false  失败
+            info:说明
+
+
